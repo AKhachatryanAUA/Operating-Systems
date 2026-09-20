@@ -1,0 +1,23 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17080\viewh8440\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Assignment 1:\
+With Fork a child process is created that executes getpid command and prints the output before termination. Then parent calls getpid without using wait.\
+\
+Assignment 2:\
+Using fork parent creates 2 child processes that just print their id and stop execution. Then using waited parent waits for execution of 1st child and prints Stus code with the help of WIFEXITED\
+\
+Assignment 3:\
+Create helper functions 1 and 2 afterwards call the functions one by one using atexit. Atexit is a very useful tool to execute code on exit. This could be useful for example for data and temp file cleanup.\
+\
+Assignment 4:\
+Create two child processes execute anything with them than exit with different status codes. Then with waited parent waits fro each child to finish execution then prints their status code\
+\
+Assignment 5:\
+First the program had no wait which resulted in Childs to become zombie processes. But afterwards after adding waits the processes were executed correctly so no zombie processes were there.\
+ When wait is called exit statement is getting read from kernel and instantly terminates the process. Without wait the process gets adopted by system which than automatically reaps it.\
+}
